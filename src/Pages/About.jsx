@@ -18,10 +18,7 @@ function Contact() {
       <div className="owners">
         {users &&
           users.results.map((user) => (
-            <Card
-              key={user.id.value}
-              style={{ width: "10rem", margin: "2rem" }}
-            >
+            <Card key={user.phone} style={{ width: "10rem", margin: "2rem" }}>
               <Card.Img variant="top" src={user.picture.large} />
               <Card.Body>
                 <Card.Title>{user.name.first}</Card.Title>
